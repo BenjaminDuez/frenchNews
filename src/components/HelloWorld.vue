@@ -1,12 +1,19 @@
 <template>
 <div>
+
   <div id="container-article" v-if="items != null">
-  <figure v-for="(item, index) in items.data.articles" :key="index">
-        <img :src="item.urlToImage" :alt="item.description">
-        <figcaption>{{ item.title }}</figcaption> 
-        <a class="myButton" :href="item.url">Lire l'article</a>
+    <figure v-for="(item, index) in items.data.articles" :key="index">
+      <img :src="item.urlToImage" :alt="item.description">
+      <figcaption>{{ item.title }}</figcaption> 
+      <a class="myButton" :href="item.url">Lire l'article</a>
     </figure>
   </div>
+  <div v-else>
+    <center>
+      <img src="../assets/loading.gif" alt="drapeau de france">
+    </center>
+  </div>
+
 </div>
 </template>
 
