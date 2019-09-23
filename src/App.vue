@@ -1,5 +1,11 @@
 <template>
   <div id="app">
+    <img src="./assets/france.gif" alt="drapeau de france">
+    <h1>French News</h1>
+    <h2>Bienvenue sur le site FrenchNews, le plus grands site d'information français.</h2>
+    <section>
+      <HelloWorld></HelloWorld>
+    </section>
   </div>
 </template>
 
@@ -16,7 +22,7 @@ export default {
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
